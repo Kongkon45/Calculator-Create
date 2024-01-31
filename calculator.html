@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input id="display" type="text" readonly>
+            <div id="keys">
+                <button onclick="allClear()" class="operator">AC</button>
+                <button onclick="singleNumberDel()" class="operator">Del</button>
+                <button onclick="keyBtn('%')" class="operator">%</button>
+                <button onclick="keyBtn('/')" class="operator">/</button>
+                <button onclick="keyBtn('7')">7</button>
+                <button onclick="keyBtn('8')">8</button>
+                <button onclick="keyBtn('9')">9</button>
+                <button onclick="keyBtn('*')" class="operator">*</button>
+                <button onclick="keyBtn('4')">4</button>
+                <button onclick="keyBtn('5')">5</button>
+                <button onclick="keyBtn('6')">6</button>
+                <button onclick="keyBtn('-')" class="operator">-</button>
+                <button onclick="keyBtn('1')">1</button>
+                <button onclick="keyBtn('2')">2</button>
+                <button onclick="keyBtn('3')">3</button>
+                <button onclick="keyBtn('+')" class="operator">+</button>
+                <button onclick="keyBtn('00')">00</button>
+                <button onclick="keyBtn('0')">0</button>
+                <button onclick="keyBtn('.')">.</button>
+                <button onclick="calculate()" class="equal">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
